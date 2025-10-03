@@ -327,8 +327,30 @@ h3 {
   width: 100%;
 }
 
-/*PROJECTOS*/
-
+/* Projects */
 .single-project-info {
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.single-project-description,
+.single-project-btn {
+  text-align: center;
+  grid-column: 1/-1;
+}
+.single-project-img img {
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+  border-radius: 20px;
+}
+.single-project-details ul {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.single-project-btn .prev {
+  float: left;
+}
+.single-project-btn .next {
+  float: right;
 }
